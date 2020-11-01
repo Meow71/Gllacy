@@ -8,22 +8,20 @@
 <body>
 
 	<header>
+		<a>
+			<img src="/img/logo.svg" alt="Логотип интернет-магазина мороженого Gllacy">
+		</a>
 		<nav>
-			<a>
-				<img src="/img/logo.svg" alt="Логотип интернет-магазина мороженого Gllacy">
-			</a>
 			<ul>
 				<li><a href="catalog.html">Каталог</a></li>
 				<li><a href="delivery.html">Доставка и оплата</a></li>
 				<li><a href="about.html">О компании</a></li>
 			</ul>
-			<ul>
-				<li>
-					<button type="button">Найти</button>
-					<button type="button">Вход</button>
-					<button type="button">Пусто</button>
-				</li>
-			</ul>
+			<div>
+				<a href="">Найти</a>
+				<a href="">Вход</a>
+				<a href="">Пусто</a>
+			</div>
 		</nav>
 	</header>
 
@@ -31,10 +29,10 @@
 		<h1>Интернет-магазин мороженого Gllacy</h1>
 		<section>			
 			<h2>Режим работы</h2>
-			<p>
-				с 10 до 20, ежедневно<br>
-				8 812 450-25-25
-			</p>
+			<div>
+				<div>с 10 до 20, ежедневно</div>
+				<div>8 812 450-25-25</div>
+			</div>
 		</section>
 
 		<section>
@@ -47,47 +45,51 @@
 				<div>
 					<p>Малинка даром!</p>
 					<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-					<button type="button">Хочу варенье!</button>
+					<a href="">Хочу варенье!</a>
 				  </div>
 				  <div>
 					<p>Шоколадки даром!</p>
 					<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-					<button type="button">Хочу шоколадки!</button>
+					<a href="">Хочу шоколадки!</a>
 		  		</div>
 		</section>
 
 		<section>
 			<h2>Хиты продаж</h2>
-			<ul>
-				<li>
+			<div>
+				<a>
+					<!-- остальные карточки по аналогии -->
 					<img src="img/ice-cream.svg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-					<p>310₽</p>
-					<p>/кг</p>
-					<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+					<span>
+						<p>310₽</p>
+						<p>/кг</p>
+					</span>
+					
+					<span href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
 					<button type="button">Быстрый просмотр</button>
-				</li>
-				<li>
+				</a>
+				<a>
 					<img src="/img/ice-cream.svg" alt="Сливочно-кофейное с кусочками шоколада">
 					<p>380₽</p>
 					<p>/кг</p>
 					<a href="#">Сливочно-кофейное с кусочками шоколада</a>
 					<button type="button">Быстрый просмотр</button>
-				</li>
-				<li>
+				</a>
+				<div>
 					<img src="/img/ice-cream.svg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
 					<p>355₽</p>
 					<p>/кг</p>
 					<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
 					<button type="button">Быстрый просмотр</button>
-				</li>
-				<li>
+				</div>
+				<div>
 					<img src="/img/ice-cream.svg" alt="Сливочное крем-брюле с карамельной подливкой">
 					<p>415₽</p>
 					<p>/кг</p>
 					<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
 					<button type="button">Быстрый просмотр</button>
-				</li>
-			</ul>
+				</div>
+			</div>
 		</section>
 
 		<section>
@@ -116,9 +118,16 @@
 					<a href="#">10 способов сервировки фруктовых щербетов к столу</a>
 				</article>
 				<div>
-					<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого
+					<form action="/">
+						<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого
 						вкусного, что у нас происходит. Обещаем не спамить и не слать всякой
 						ненужной ерунды. Честно =)</p>
+						<div>
+							<label><input type="text" placeholder="" value=""></label>
+							<label><input type="button" placeholder="Отправить"></label>
+						</div>	
+					</form>
+					
 						<!-- форма подписки на рассылку -->
 				</div>
 		</section>
@@ -152,14 +161,15 @@
 		<div>
 			<ul>
 				<li><a href="#">Для поставщиков</a></li>
-				<li><a href="#">О производстве</a></li>
 				<li><a href="#">Наши документы</a></li>
+				<li><a href="#">О производстве</a></li>
 				<li><a href="#">Экологические стандарты</a></li>
 			</ul>
 		</div>
 		<div>
 			<a href="https://htmlacademy.ru/intensive/htmlcss">
-			<img src="/img/logo-htmlacademy.svg" alt="Логотип HTML академии"></a>
+			<img src="/img/logo-htmlacademy.svg" alt="Логотип HTML академии">
+			</a>
 			<p>
 				Сделано в <a href="https://htmlacademy.ru/study">HTML Academy</a>  &copy; 2020
 			</p>
