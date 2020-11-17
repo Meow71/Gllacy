@@ -10,38 +10,85 @@
 <body>
 
 	<header>
-		<a>
-			<img src="img/logo.svg" alt="Логотип интернет-магазина мороженого Gllacy">
-		</a>
 		<nav>
-			<ul>
-				<li><a href="catalog.html">Каталог</a></li>
-				<li><a href="delivery.html">Доставка и оплата</a></li>
-				<li><a href="about.html">О компании</a></li>
-			</ul>
+			<img src="img/logo.svg" alt="Логотип интернет-магазина мороженого Gllacy">
 			<div>
-				<a href="#">Найти</a>
-				<a href="#">Вход</a>
-				<a href="#">Пусто</a>
+				<ul>
+					<li><a href="catalog.html">Каталог</a></li>
+						<ul>
+							<li><a href="#">Новинки</a></li>
+							<li><a href="catalog.html">Сливочное</a></li>
+							<li><a href="#">Щербеты</a></li>
+							<li><a href="#">Фруктовый лед</a></li>
+							<li><a href="#">Мелорин</a></li>
+						</ul>
+					<li><a href="delivery.html">Доставка и оплата</a></li>
+					<li><a href="about.html">О компании</a></li>
+				</ul>
 			</div>
+
+			<div>
+				<ul>
+					<li><a href="#">Поиск</a>
+						<form action="https://echo.htmlacademy.ru" method="GET">
+							<p>
+								<label><input type="search" name="search" placeholder="Что ищем?"></label>
+							</p>
+						</form>
+					</li>
+					<li><a href="#">Вход</a>
+						<div>
+							<form action="/https://echo.htmlacademy.ru" method="POST">
+								<p>
+									<label><input id="user-login" type="email" name="login" placeholder="email@example.com">Логин</label>
+								</p>
+								<p>
+									<label><input type="password" name="password" placeholder="********">Пароль</label>
+								</p>
+							</form>
+							<button type="submit">Войти</button>
+								<div>
+									<a href="#">Забыли пароль?</a>
+									<a href="#">Новая регистрация</a>
+								</div>
+						</div>
+					</li>
+					<li><a href="#">Пусто</a></li>
+				</ul>
+			</div>
+
 			<div>
 				<h2 class="visually-hidden">Режим работы</h2>
 				<div>с 10 до 20, ежедневно</div>
-				<div>8 812 450-25-25</div>
-			</div>
+				<div><a href="tel:88124502525">8 812 450-25-25</a></div>
 			</div>
 		</nav>
 	</header>
 
 	<main>
 		<h1 class="visually-hidden">Интернет-магазин мороженого Gllacy</h1>
-		<section>			
-			
-		</section>
 
 		<section>
 			<h2 class="visually-hidden">Мороженое</h2>
-			<!-- секция со слайдером -->
+				<div>
+					<label for="product-1">Первый</label>
+              	<label for="product-2">Второй</label>
+              	<label for="product-3">Третий</label>
+				</div>
+				<ul>
+					<li>
+						<h3>Крем-брюле и пломбир с малиновым джемом</h3>
+						<a href="#">Давайте оба!</a>
+					</li>
+					<li>
+						<h3>Шоколадный пломбир и лимонный сорбет</h3>
+						<a href="#">Давайте оба!</a>
+					</li>
+					<li>
+						<h3>Пломбир с помадкой и клубничный щербет</h3>
+						<a href="#">Давайте оба!</a>
+					</li>
+				</ul>
 		</section>
 
 		<section>
@@ -50,8 +97,8 @@
 					<p>Малинка даром!</p>
 					<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
 					<a href="#">Хочу варенье!</a>
-				  </div>
-				  <div>
+				</div>
+				<div>
 					<p>Шоколадки даром!</p>
 					<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
 					<a href="#">Хочу шоколадки!</a>
@@ -60,47 +107,44 @@
 
 		<section>
 			<h2 class="visually-hidden">Хиты продаж</h2>
-			<div>
-				<div>
-					
-					<img src="img/1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-					<span>
-						<p>310₽</p>
-						<p>/кг</p>
-					</span>
-					<span href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
-					<button type="button">Быстрый просмотр</button>
-				</div>
-				<div>
-					<img src="img/2.jpg" alt="Сливочно-кофейное с кусочками шоколада">
-						<span>
-							<p>380₽</p>
-							<p>/кг</p>
-						</span>
-
-					<span href="#">Сливочно-кофейное с кусочками шоколада</span>
-					<button type="button">Быстрый просмотр</button>
-				</div>
-				<div>
-					<img src="img/3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-						<span>
-							<p>355₽</p>
-							<p>/кг</p>
-						</span>
-					
-					<span href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-					<button type="button">Быстрый просмотр</button>
-				</div>
-				<div>
-					<img src="img/4.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
-						<span>
-						<p>415₽</p>
-						<p>/кг</p>
-					</span>
-					<span href="#">Сливочное крем-брюле с карамельной подливкой</a>
-					<button type="button">Быстрый просмотр</button>
-				</div>
-			</div>
+				<ul>
+					<li>
+						<img src="img/1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+						<p>
+							<span>310₽</span>
+							<span>/кг</span>
+						</p>
+						<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+						<button type="button">Быстрый просмотр</button>
+					</li>
+					<li>
+						<img src="img/2.jpg" alt="Сливочно-кофейное с кусочками шоколада">
+						<p>
+							<span>380₽</span>
+							<span>/кг</span>
+						</p>
+						<a href="#">Сливочно-кофейное с кусочками шоколада</a>
+						<button type="button">Быстрый просмотр</button>
+					</li>
+					<li>
+						<img src="img/3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+						<p>
+							<span>355₽</span>
+							<span>/кг</span>
+						</p>
+						<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+						<button type="button">Быстрый просмотр</button>
+					</li>
+					<li>
+						<img src="img/4.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
+						<p>
+							<span>415₽</span>
+							<span>/кг</span>
+						</p>
+						<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+						<button type="button">Быстрый просмотр</button>
+					</li>
+				</ul>
 		</section>
 
 		<section>
@@ -135,11 +179,9 @@
 					</p>
 					<form action="/https://echo.htmlacademy.ru" method="POST">
 						<p>
-							<label for="email">Электронная почта</label>
-							<input id="email" type="email" placeholder="email@example.com" value="">
+							<label><input type="email" placeholder="email@example.com" value="">Электронная почта</label>
 						</p>
-						<button type="submit">Отправить></button>
-						</div>	
+						<button type="submit">Отправить></button>	
 					</form>
 				</div>
 		</section>
@@ -159,25 +201,7 @@
 				(c 10 до 20 ежедневно)
 			</p>
 			<a href="#">Форма обратной связи</a>
-			</div>
-		</section>
-
-		<section>
-			<h2 class="visually-hidden">Личный кабинет</h2>
-			<form action="/https://echo.htmlacademy.ru" method="POST">
-				<p>
-					<label for="user-login">Логин</label>
-					<input id="user-login" type="email" name="login" placeholder="email@example.com">
-				</p>
-				<p>
-					<label><input type="password" name="password" placeholder="********">Пароль</label>
-				</p>
-			</form>
-			<button type="submit">Войти</button>
-			<div>
-				<a href="#">Забыли пароль?</a>
-				<a href="#">Новая регистрация</a>
-			</div>
+			</div>			
 		</section>
 	</main>
 
