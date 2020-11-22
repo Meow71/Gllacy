@@ -12,12 +12,14 @@
 <body>
 
 	<header>
-		<nav>
+		<div>
 			<img src="img/logo.svg" alt="Логотип интернет-магазина мороженого Gllacy">
+		</div>
+		<nav class="main-navigation">
 			<div>
-				<ul>
+				<ul class="site-navigation">
 					<li><a href="catalog.html">Каталог</a></li>
-						<ul>
+						<ul class="subnavigation">
 							<li><a href="#">Новинки</a></li>
 							<li><a href="catalog.html">Сливочное</a></li>
 							<li><a href="#">Щербеты</a></li>
@@ -30,7 +32,7 @@
 			</div>
 
 			<div>
-				<ul>
+				<ul class="user-navigation">
 					<li><a href="#">Поиск</a>
 						<form action="https://echo.htmlacademy.ru" method="GET">
 							<p>
@@ -48,7 +50,7 @@
 									<label><input type="password" name="password" placeholder="********">Пароль</label>
 								</p>
 							</form>
-							<button type="submit">Войти</button>
+							<button class="button" type="submit">Войти</button>
 								<div>
 									<a href="#">Забыли пароль?</a>
 									<a href="#">Новая регистрация</a>
@@ -80,27 +82,27 @@
 				<ul>
 					<li>
 						<h3>Крем-брюле и пломбир с малиновым джемом</h3>
-						<a href="#">Давайте оба!</a>
+						<a class="button" href="#">Давайте оба!</a>
 					</li>
 					<li>
 						<h3>Шоколадный пломбир и лимонный сорбет</h3>
-						<a href="#">Давайте оба!</a>
+						<a class="button" href="#">Давайте оба!</a>
 					</li>
 					<li>
 						<h3>Пломбир с помадкой и клубничный щербет</h3>
-						<a href="#">Давайте оба!</a>
+						<a class="button" href="#">Давайте оба!</a>
 					</li>
 				</ul>
 		</section>
 
 		<section>
 			<h2 class="visually-hidden">Специальное предложение</h2>
-				<div>
+				<div class="spetial-offer-raspberries">
 					<p>Малинка даром!</p>
 					<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
 					<a href="#">Хочу варенье!</a>
 				</div>
-				<div>
+				<div class="spetial-offer-chocolate">
 					<p>Шоколадки даром!</p>
 					<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
 					<a href="#">Хочу шоколадки!</a>
@@ -117,7 +119,7 @@
 							<span>/кг</span>
 						</p>
 						<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-						<button type="button">Быстрый просмотр</button>
+						<button class="button" type="button">Быстрый просмотр</button>
 					</li>
 					<li>
 						<img src="img/2.jpg" alt="Сливочно-кофейное с кусочками шоколада">
@@ -126,7 +128,7 @@
 							<span>/кг</span>
 						</p>
 						<a href="#">Сливочно-кофейное с кусочками шоколада</a>
-						<button type="button">Быстрый просмотр</button>
+						<button class="button" type="button">Быстрый просмотр</button>
 					</li>
 					<li>
 						<img src="img/3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
@@ -135,7 +137,7 @@
 							<span>/кг</span>
 						</p>
 						<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-						<button type="button">Быстрый просмотр</button>
+						<button class="button" type="button">Быстрый просмотр</button>
 					</li>
 					<li>
 						<img src="img/4.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
@@ -144,15 +146,15 @@
 							<span>/кг</span>
 						</p>
 						<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
-						<button type="button">Быстрый просмотр</button>
+						<button class="button" type="button">Быстрый просмотр</button>
 					</li>
 				</ul>
 		</section>
 
-		<section>
+		<section class="advantages">
 			<h2 class="visually-hidden">Наши преимущества</h2>
 			<p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
-			<ul>
+			<ul class="advantages-list">
 				<li>
 					<p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
 				</li>
@@ -183,7 +185,7 @@
 						<p>
 							<label><input type="email" placeholder="email@example.com" value="">Электронная почта</label>
 						</p>
-						<button type="submit">Отправить></button>	
+						<button class="button" type="submit">Отправить</button>	
 					</form>
 				</div>
 		</section>
@@ -202,7 +204,7 @@
 				Для заказов по телефону: <strong><a href="tel:+74954502525">450-25-25</strong></a>
 				(c 10 до 20 ежедневно)
 			</p>
-			<a href="#">Форма обратной связи</a>
+			<a class="button" href="#">Форма обратной связи</a>
 			</div>			
 		</section>
 	</main>

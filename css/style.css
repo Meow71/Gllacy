@@ -1,25 +1,14 @@
 body {
 	margin: 0;
 	padding: 0;
+
 	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 22px;
 	color: white;
+
 	background-color: #849D8F;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .visually-hidden {
 	position: absolute;
@@ -31,4 +20,92 @@ body {
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
+
+a {
+	text-decoration: none;
+}
+
+.main-navigation {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: bold;
+	color: white;
+	background-color: #849D8F;
+}
+
+.site-navigation,
+.user-navigation,
+.subnavigation {
+	list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a,
+.subnavigation a {
+	color: white;
+}
+
+/* button */
+.button {
+	font: inherit;
+	font-weight: bold;
+
+	text-align: center;
+	color: white;
+	vertical-align: middle;
+	text-decoration: none;
+
+	background-color: #f06843;
+	border: none;
+	border-radius: 30px;
+}
+
+.button:hover,
+.button:focus {
+	background-color: #ed705e;
+}
+
+.button:active {
+	background-color: #e74a35;
+}
+
+/* special offers */
+.spetial-offer-raspberries{
+	background-color: #98183f;
+	background-image: url("../img/Малиновый\ фон.jpg");
+ }
+
+ .spetial-offer-chocolate{
+	background-color: #6a4a3a;
+	background-image: url("../img/Шоколадный\ фон.jpg");
+ }
+
+
+/* hits*/
+
+/* advantages block*/
+.advantages{
+	color: #323232;
+	background-color: #f1e8d5;
+	background-image: url("../img/Вафля\ фон.jpg");
+	
+}
+
+.advantages-list {
+	list-style: none;
+}
+/* end advantages block*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
