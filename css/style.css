@@ -81,9 +81,9 @@ a {
  }
 
 
-/* hits*/
+/* hits */
 
-/* advantages block*/
+/* advantages */
 .advantages{
 	color: #323232;
 	background-color: #f1e8d5;
@@ -94,8 +94,30 @@ a {
 .advantages-list {
 	list-style: none;
 }
-/* end advantages block*/
+/* useful information */
+.useful-information {
+}
 
+news,
+.subscribe-form{
+}
+
+.subscribe-form{
+ }
+ 
+ .news{
+	color: #323232;
+	background-color: #ffffff;
+	background-image: url("../img/Клубничный\ фон.jpg");
+	background-repeat: no-repeat;
+	background-size: auto;
+ }
+
+ .subscribe-form{
+	color: #323232;
+	background-color: #f8f7f4;
+	border: 5px solid #fe9e90;
+ }
 
 
 
