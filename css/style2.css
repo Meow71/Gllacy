@@ -1,0 +1,107 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Roboto", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	color: white;
+	
+	background: url("../img/gllacy-index.jpg") 50% 0;
+	background-size: 100%;
+	background-repeat: no-repeat;
+
+	opacity: 0.5;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+.site-navigation,
+.user-navigation,
+.subnavigation {
+	list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a,
+.subnavigation a {
+	color: white;
+}
+
+.header {
+	
+}
+.header__logo {
+	width: 154px;
+	height: 64px;
+	outline: 5px solid blueviolet;
+
+}
+
+.main__header {
+	outline: 5px solid red;
+}
+
+.main-navigation {
+	outline: 5px solid black;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+
+}
+
+.site-navigation {
+	outline: 5px solid green;
+	width: 379px;
+	margin-right: 343px;
+}
+
+.user-navigation {
+	outline: 5px solid yellow;
+	width: 274px;
+}
+
+.navigation-container {
+	width: 100%;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.navigation-container .container {
+	display: flex;
+	
+}
+
+.info {
+	outline: 5px solid orange;
+	width: 196px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
