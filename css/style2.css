@@ -29,6 +29,7 @@ a {
 	text-decoration: none;
 }
 
+/* сетка меню */
 .site-navigation,
 .user-navigation,
 .subnavigation {
@@ -41,14 +42,12 @@ a {
 	color: white;
 }
 
-.header {
-	
-}
 .header__logo {
 	width: 154px;
 	height: 64px;
 	outline: 5px solid blueviolet;
-
+	margin-top: 17px;
+	margin-left: 30px;
 }
 
 .main__header {
@@ -60,13 +59,12 @@ a {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
-
 }
 
 .site-navigation {
 	outline: 5px solid green;
-	width: 379px;
-	margin-right: 343px;
+	width: 400px;
+	margin-right: 400px;
 }
 
 .user-navigation {
@@ -79,13 +77,13 @@ a {
 }
 
 .container {
-	width: 1200px;
+	width: 1355px;
 	margin: 0 auto;
+	outline: 5px solid blue;
 }
 
 .navigation-container .container {
 	display: flex;
-	
 }
 
 .info {
@@ -93,9 +91,40 @@ a {
 	width: 196px;
 }
 
+/* спец предложения */
+.spetial-offer {
+	display: flex;
+	justify-content: space-between;
+}
 
+.spetial-offer-raspberries{
+	height: 230px;
+	width: 560px;
+	border-radius: 15px;
+	background-color: #98183f;
+	background-image: url("../img/Малиновый\ фон.jpg");
+	background-repeat: no-repeat;
+ }
 
+ .spetial-offer-chocolate{
+	height: 230px;
+	width: 560px;
+	border-radius: 15px;
+	background-color: #6a4a3a;
+	background-image: url("../img/Шоколадный\ фон.jpg");
+	background-repeat: no-repeat;
+ }
 
+ /* хиты продаж */
+ .hits {
+	padding-top: 40px;
+ }
+
+ .catalog {
+	 display: flex;
+	 justify-content: space-between;
+	 list-style: none;
+ }
 
 
 
