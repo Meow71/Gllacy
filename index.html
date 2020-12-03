@@ -14,73 +14,72 @@
 	<input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
 	<input class="visually-hidden" type="radio" id="product-2" name="toggle">
 	<input class="visually-hidden" type="radio" id="product-3" name="toggle">
-
-	<header class="header">
-		<nav class="main-navigation">
-		<div class="navigation-container">
-			<div class="container">
-				<div class="header__logo"> 
+	<div class="site-wrapper">
+		<header class="main-header">
+			<nav class="main-navigation">
+				<a class="header__logo"> 
 					<img src="img/logo.svg" alt="Логотип интернет-магазина мороженого Gllacy">
-				</div>
-				<div>
-					<ul class="site-navigation">
-						<li><a href="catalog.html">Каталог</a></li>
-							<ul class="subnavigation visually-hidden">
-								<li><a href="#">Новинки</a></li>
-								<li><a href="catalog.html">Сливочное</a></li>
-								<li><a href="#">Щербеты</a></li>
-								<li><a href="#">Фруктовый лед</a></li>
-								<li><a href="#">Мелорин</a></li>
-							</ul>
-						<li><a href="delivery.html">Доставка и оплата</a></li>
-						<li><a href="about.html">О компании</a></li>
-					</ul>
-				</div>
-
-				<div>
-					<ul class="user-navigation">
-						<li><a href="#">Поиск</a>
-							<form class="visually-hidden" action="https://echo.htmlacademy.ru" method="GET">
-								<p>
-									<label><input type="search" name="search" placeholder="Что ищем?"></label>
-								</p>
-							</form>
-						</li>
-						<li>
-							<h2 class="visually-hidden">Личный кабинет</h2>
-							<a href="#">Вход</a>
-							<div>
-								<form class="visually-hidden" action="/https://echo.htmlacademy.ru" method="POST">
+				</a>
+				
+				<div class="navigation-container">
+						<ul class="site-navigation">
+							<li><a href="catalog.html">Каталог</a></li>
+								<ul class="subnavigation visually-hidden">
+									<li><a href="#">Новинки</a></li>
+									<li><a href="catalog.html">Сливочное</a></li>
+									<li><a href="#">Щербеты</a></li>
+									<li><a href="#">Фруктовый лед</a></li>
+									<li><a href="#">Мелорин</a></li>
+								</ul>
+							<li><a href="delivery.html">Доставка и оплата</a></li>
+							<li><a href="about.html">О компании</a></li>
+						</ul>
+					
+						<ul class="user-navigation">
+							<li>
+								<a href="#">Поиск</a>
+								<form class="visually-hidden" action="https://echo.htmlacademy.ru" method="GET">
 									<p>
-										<label><input id="user-login" type="email" name="login" placeholder="email@example.com">Логин</label>
-									</p>
-									<p>
-										<label><input type="password" name="password" placeholder="********">Пароль</label>
+										<label><input type="search" name="search" placeholder="Что ищем?"></label>
 									</p>
 								</form>
-								<button class="button visually-hidden type="submit">Войти</button>
-									<div class="visually-hidden">
-										<a href="#">Забыли пароль?</a>
-										<a href="#">Новая регистрация</a>
-									</div>
-							</div>
-						</li>
-						<li><a href="#">Пусто</a></li>
-					</ul>
+							</li>
+							<li>
+								<h2 class="visually-hidden">Личный кабинет</h2>
+								<a href="#">Вход</a>
+								<div>
+									<form class="visually-hidden" action="/https://echo.htmlacademy.ru" method="POST">
+										<p>
+											<label><input id="user-login" type="email" name="login" placeholder="email@example.com">Логин</label>
+										</p>
+										<p>
+											<label><input type="password" name="password" placeholder="********">Пароль</label>
+										</p>
+									</form>
+									<button class="button visually-hidden type="submit">Войти</button>
+										<div class="visually-hidden">
+											<a href="#">Забыли пароль?</a>
+											<a href="#">Новая регистрация</a>
+										</div>
+								</div>
+							</li>
+							<li>
+								<a href="#">Пусто</a>
+							</li>
+						</ul>
 				</div>
-			</div>
-		</div>
+			</nav>
+		</header> 
 
+		<main class="container">
+			<h1 class="visually-hidden">Интернет-магазин мороженого Gllacy</h1>
 			<div class="info">
 				<h2 class="visually-hidden">Режим работы</h2>
-				<div>с 10 до 20, ежедневно</div>
-				<div><a href="tel:88124502525">8 812 450-25-25</a></div>
+				<div class="user-info">
+					<div>с 10 до 20, ежедневно</div>
+					<div><a href="tel:88124502525">8 812 450-25-25</a></div>
+				</div>
 			</div>
-		</nav>
-	</header>
-
-	<main class="container">
-		<h1 class="visually-hidden">Интернет-магазин мороженого Gllacy</h1>
 
 		<section>
 			<h2 class="visually-hidden">Мороженое</h2>
@@ -119,7 +118,7 @@
 
 		<section class="hits">
 			<h2 class="visually-hidden">Хиты продаж</h2>
-				<ul class="catalog">
+				<ul class="hits__catalog">
 					<li>
 						<img src="img/1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 						<p>
@@ -215,9 +214,9 @@
 			<a class="button" href="#">Форма обратной связи</a>
 			</div>			
 		</section>
-	</main>
+		</main>
 
-	<footer>
+		<footer>
 		<div>
 			<ul>
 				<li>
@@ -262,6 +261,7 @@
 				Сделано в <a href="https://htmlacademy.ru/study">HTML Academy</a>  &copy; 2020
 			</p>
 		</div>
+	</div>
 	</footer>	
 </body>
 </html>

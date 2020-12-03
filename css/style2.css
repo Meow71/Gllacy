@@ -5,13 +5,7 @@ body {
 	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 22px;
-	color: white;
-	
-	background: url("../img/gllacy-index.jpg") 50% 0;
-	background-size: 100%;
-	background-repeat: no-repeat;
-
-	opacity: 0.5;
+	color: #ffffff;
 }
 
 .visually-hidden {
@@ -42,54 +36,87 @@ a {
 	color: white;
 }
 
-.header__logo {
-	width: 154px;
-	height: 64px;
-	outline: 5px solid blueviolet;
-	margin-top: 17px;
-	margin-left: 30px;
+.site-wrapper {
+	background-color: #849d8f;
+	background-repeat: no-repeat;
+	background-position: center top;
 }
 
-.main__header {
+.main-header {
+	width: 1200px;
+	min-width: 940px;
+	margin: 0 auto;
 	outline: 5px solid red;
 }
 
 .main-navigation {
 	outline: 5px solid black;
+	height: 77px;
+	font-size: 16px;
+   line-height: 18px;
 	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
 }
 
-.site-navigation {
-	outline: 5px solid green;
-	width: 400px;
-	margin-right: 400px;
-}
-
-.user-navigation {
-	outline: 5px solid yellow;
-	width: 274px;
+.header__logo {
+	width: 154px;
+	height: 64px;
+	outline: 5px solid blueviolet;
+	align-self: flex-end;
+   margin-right: 10px;
+   margin-left: 27px;
+   margin-bottom: 2px;
+   width: 180px;
 }
 
 .navigation-container {
 	width: 100%;
+	margin-bottom: 6px;
+   display: flex;
+   justify-content: space-between;
 }
 
+/* главное меню */
+.site-navigation {
+	outline: 5px solid green;
+	margin: 0;
+   padding: 0;
+   width: 385px;
+   display: flex;
+   align-items: center;
+	
+}
+
+/* пользовательское меню */
+
+.user-navigation {
+	outline: 5px solid yellow;
+	width: 310px;
+	display: flex;
+   align-items: center;
+}
+
+/* режим работы */
 .container {
-	width: 1355px;
+	width: 1200px;
 	margin: 0 auto;
 	outline: 5px solid blue;
-}
-
-.navigation-container .container {
-	display: flex;
 }
 
 .info {
 	outline: 5px solid orange;
 	width: 196px;
 }
+
+.user-info {
+	
+}
+
+
+.navigation-container .container {
+	display: flex;
+}
+
+
 
 /* спец предложения */
 .spetial-offer {
@@ -120,11 +147,12 @@ a {
 	padding-top: 40px;
  }
 
- .catalog {
+ .hits__catalog {
 	 display: flex;
 	 justify-content: space-between;
 	 list-style: none;
  }
+
 
 
 
