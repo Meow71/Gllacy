@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,82 +10,94 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style2.css">
 </head>
-<body>
 
+<body>
+	<!--
 	<input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
 	<input class="visually-hidden" type="radio" id="product-2" name="toggle">
-	<input class="visually-hidden" type="radio" id="product-3" name="toggle">
+	<input class="visually-hidden" type="radio" id="product-3" name="toggle"> -->
 	<div class="site-wrapper">
-		<header class="main-header">
-			<nav class="main-navigation">
-				<a class="header__logo"> 
-					<img src="img/logo.svg" alt="Логотип интернет-магазина мороженого Gllacy">
-				</a>
-				
-				<div class="navigation-container">
-						<ul class="site-navigation">
-							<li><a href="catalog.html">Каталог</a></li>
-								<ul class="subnavigation visually-hidden">
-									<li><a href="#">Новинки</a></li>
-									<li><a href="catalog.html">Сливочное</a></li>
-									<li><a href="#">Щербеты</a></li>
-									<li><a href="#">Фруктовый лед</a></li>
-									<li><a href="#">Мелорин</a></li>
-								</ul>
-							<li><a href="delivery.html">Доставка и оплата</a></li>
-							<li><a href="about.html">О компании</a></li>
-						</ul>
-					
-						<ul class="user-navigation">
-							<li>
-								<a href="#">Поиск</a>
-								<form class="visually-hidden" action="https://echo.htmlacademy.ru" method="GET">
-									<p>
-										<label><input type="search" name="search" placeholder="Что ищем?"></label>
-									</p>
-								</form>
-							</li>
-							<li>
-								<h2 class="visually-hidden">Личный кабинет</h2>
-								<a href="#">Вход</a>
-								<div>
-									<form class="visually-hidden" action="/https://echo.htmlacademy.ru" method="POST">
+		<header class="header">
+			<div class="container">
+				<div class="wrapper header-wrapper">
+					<div class="header-top">
+						<div class="logo header__logo">
+							<img src="img/Logo.png" alt="" class="img">
+						</div>
+						<nav class="navigation header__navigation header-navigation">
+							<ul class="header-navigation__list list">
+								<li class="list-item">
+									<a href="#" class="link header-link">Каталог</a>
+								</li>
+								<li class="list-item">
+									<a href="#" class="link header-link">Доставка и оплата</a>
+								</li>
+								<li class="list-item">
+									<a href="#" class="link header-link">О Компании</a>
+								</li>
+							</ul>
+
+							<ul class="user-navigation header-navigation">
+								<li>
+									<a>Поиск</a>
+									<form class="visually-hidden" action="https://echo.htmlacademy.ru" method="GET">
 										<p>
-											<label><input id="user-login" type="email" name="login" placeholder="email@example.com">Логин</label>
-										</p>
-										<p>
-											<label><input type="password" name="password" placeholder="********">Пароль</label>
+											<label><input type="search" name="search" placeholder="Что ищем?"></label>
 										</p>
 									</form>
-									<button class="button visually-hidden type="submit">Войти</button>
+								</li>
+								<li>
+									<h2 class="visually-hidden">Личный кабинет</h2>
+									<a href="#">Вход</a>
+									<div>
+										<form class="visually-hidden" action="/https://echo.htmlacademy.ru" method="POST">
+											<p>
+												<label><input id="user-login" type="email" name="login"
+														placeholder="email@example.com">Логин</label>
+											</p>
+											<p>
+												<label><input type="password" name="password" placeholder="********">Пароль</label>
+											</p>
+										</form>
+										<button class="button visually-hidden type=" submit">Войти</button>
 										<div class="visually-hidden">
 											<a href="#">Забыли пароль?</a>
 											<a href="#">Новая регистрация</a>
 										</div>
-								</div>
-							</li>
-							<li>
-								<a href="#">Пусто</a>
-							</li>
-						</ul>
+									</div>
+								</li>
+								<li>
+									<a href="#">Пусто</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header-bottom">
+						<div class="user-info">
+							<div class="user-info__time">с 10 до 20, ежедневно</div>
+							<a class="phone header__phone" href="tel:88124502525">8 812 450-25-25</a>
+						</div>
+					</div>
 				</div>
-			</nav>
-		</header> 
+			</div>
+		</header>
+
+		<ul class="subnavigation visually-hidden">
+			<li><a href="#">Новинки</a></li>
+			<li><a href="catalog.html">Сливочное</a></li>
+			<li><a href="#">Щербеты</a></li>
+			<li><a href="#">Фруктовый лед</a></li>
+			<li><a href="#">Мелорин</a></li>
+		</ul>
+
 
 		<main class="container">
 			<h1 class="visually-hidden">Интернет-магазин мороженого Gllacy</h1>
-			<div class="info">
-				<h2 class="visually-hidden">Режим работы</h2>
-				<div class="user-info">
-					<div>с 10 до 20, ежедневно</div>
-					<div><a href="tel:88124502525">8 812 450-25-25</a></div>
-				</div>
-			</div>
 
-		<section>
-			<h2 class="visually-hidden">Мороженое</h2>
+			<section>
+				<h2 class="visually-hidden">Мороженое</h2>
 				<div>
-					
+
 				</div>
 				<ul>
 					<li>
@@ -100,24 +113,26 @@
 						<a class="button" href="#">Давайте оба!</a>
 					</li>
 				</ul>
-		</section> 
+			</section>
 
-		<section class="spetial-offer">
-			<h2 class="visually-hidden">Специальное предложение</h2>
+			<section class="spetial-offer">
+				<h2 class="visually-hidden">Специальное предложение</h2>
 				<div class="spetial-offer-raspberries">
 					<p>Малинка даром!</p>
-					<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+					<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
+					</p>
 					<a href="#">Хочу варенье!</a>
 				</div>
 				<div class="spetial-offer-chocolate">
 					<p>Шоколадки даром!</p>
-					<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+					<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно
+						бесплатно.</p>
 					<a href="#">Хочу шоколадки!</a>
-		  		</div>
-		</section>
+				</div>
+			</section>
 
-		<section class="hits">
-			<h2 class="visually-hidden">Хиты продаж</h2>
+			<section class="hits">
+				<h2 class="visually-hidden">Хиты продаж</h2>
 				<ul class="hits__catalog">
 					<li>
 						<img src="img/1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
@@ -156,29 +171,34 @@
 						<button class="button" type="button">Быстрый просмотр</button>
 					</li>
 				</ul>
-		</section>
+			</section>
 
-		<section class="advantages">
-			<h2 class="visually-hidden">Наши преимущества</h2>
-			<p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
-			<ul class="advantages-list">
-				<li>
-					<p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-				</li>
-				<li>
-					<p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-				</li>
-				<li>
-					<p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-				</li>
-				<li>
-					<p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
-				</li>				
-			</ul>
-		</section>
+			<section class="advantages">
+				<h2 class="visually-hidden">Наши преимущества</h2>
+				<p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес
+				</p>
+				<ul class="advantages-list">
+					<li>
+						<p>Все наше мороженое изготавливается на собственном производстве, с использованием современного
+							оборудования и проверенных временем технологий.</p>
+					</li>
+					<li>
+						<p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми
+							нас связывает долговременное сотрудничество.</p>
+					</li>
+					<li>
+						<p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все
+							дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+					</li>
+					<li>
+						<p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает
+							мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+					</li>
+				</ul>
+			</section>
 
-		<section class="useful-information">
-			<h2 class="visually-hidden">Полезная информация</h2>
+			<section class="useful-information">
+				<h2 class="visually-hidden">Полезная информация</h2>
 				<article class="news">
 					<h3>Новое в нашем блоге</h3>
 					<a href="#">10 способов сервировки фруктовых щербетов к столу</a>
@@ -192,76 +212,77 @@
 						<p>
 							<label><input type="email" placeholder="email@example.com" value="">Электронная почта</label>
 						</p>
-						<button class="button" type="submit">Отправить</button>	
+						<button class="button" type="submit">Отправить</button>
 					</form>
 				</div>
-		</section>
+			</section>
 
-		<section>
-			<h2 class="visually-hidden">Как нас найти</h2>
+			<section>
+				<h2 class="visually-hidden">Как нас найти</h2>
 				<p>
 					<img src="img/карта.png" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
 				</p>
-			<div>
-			<p>
-				Адрес главного офиса и <br>офлайн магазина:
-				<strong>ул. Большая Конюшенная 19/8, Санкт-Петербург</strong>
-			</p>
-			<p>
-				Для заказов по телефону: <strong><a href="tel:+74954502525">450-25-25</strong></a>
-				(c 10 до 20 ежедневно)
-			</p>
-			<a class="button" href="#">Форма обратной связи</a>
-			</div>			
-		</section>
+				<div>
+					<p>
+						Адрес главного офиса и <br>офлайн магазина:
+						<strong>ул. Большая Конюшенная 19/8, Санкт-Петербург</strong>
+					</p>
+					<p>
+						Для заказов по телефону: <strong><a href="tel:+74954502525">450-25-25</strong></a>
+						(c 10 до 20 ежедневно)
+					</p>
+					<a class="button" href="#">Форма обратной связи</a>
+				</div>
+			</section>
 		</main>
 
 		<footer>
-		<div>
-			<ul>
-				<li>
-					<a href="#">
-					<span class="visually-hidden">Твиттер</span>
-					<img src="img/twitter.svg">
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="visually-hidden">Инстаграм</span>
-						<img src="img/instagram.svg">
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="visually-hidden">Фейсбук</span>
-						<img src="img/fb.svg">
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="visually-hidden">Вконтакте</span>
-						<img src="img/vk.svg">
-					</a>
-				</li>
-			</ul>
-		</div>
-		<div>
-			<ul>
-				<li><a href="#">Для поставщиков</a></li>
-				<li><a href="#">Наши документы</a></li>
-				<li><a href="#">О производстве</a></li>
-				<li><a href="#">Экологические стандарты</a></li>
-			</ul>
-		</div>
-		<div>
-			<a href="https://htmlacademy.ru/intensive/htmlcss">
-			<img src="img/logo-htmlacademy.svg" alt="Логотип HTML академии">
-			</a>
-			<p>
-				Сделано в <a href="https://htmlacademy.ru/study">HTML Academy</a>  &copy; 2020
-			</p>
-		</div>
+			<div>
+				<ul>
+					<li>
+						<a href="#">
+							<span class="visually-hidden">Твиттер</span>
+							<img src="img/twitter.svg">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="visually-hidden">Инстаграм</span>
+							<img src="img/instagram.svg">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="visually-hidden">Фейсбук</span>
+							<img src="img/fb.svg">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="visually-hidden">Вконтакте</span>
+							<img src="img/vk.svg">
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<ul>
+					<li><a href="#">Для поставщиков</a></li>
+					<li><a href="#">Наши документы</a></li>
+					<li><a href="#">О производстве</a></li>
+					<li><a href="#">Экологические стандарты</a></li>
+				</ul>
+			</div>
+			<div>
+				<a href="https://htmlacademy.ru/intensive/htmlcss">
+					<img src="img/logo-htmlacademy.svg" alt="Логотип HTML академии" class="footer-logo">
+				</a>
+				<p>
+					Сделано в <a href="https://htmlacademy.ru/study">HTML Academy</a> &copy; 2020
+				</p>
+			</div>
 	</div>
-	</footer>	
+	</footer>
 </body>
+
 </html>

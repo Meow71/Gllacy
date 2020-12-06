@@ -1,7 +1,6 @@
 body {
 	margin: 0;
 	padding: 0;
-
 	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 22px;
@@ -42,81 +41,87 @@ a {
 	background-position: center top;
 }
 
-.main-header {
-	width: 1200px;
-	min-width: 940px;
-	margin: 0 auto;
-	outline: 5px solid red;
-}
-
-.main-navigation {
-	outline: 5px solid black;
-	height: 77px;
-	font-size: 16px;
-   line-height: 18px;
-	display: flex;
-}
-
-.header__logo {
-	width: 154px;
-	height: 64px;
-	outline: 5px solid blueviolet;
-	align-self: flex-end;
-   margin-right: 10px;
-   margin-left: 27px;
-   margin-bottom: 2px;
-   width: 180px;
-}
-
-.navigation-container {
+.container {
 	width: 100%;
-	margin-bottom: 6px;
-   display: flex;
-   justify-content: space-between;
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	outline: 5px solid blue;
 }
 
 /* главное меню */
-.site-navigation {
-	outline: 5px solid green;
+.header-wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.header-top {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.logo {
+	display: flex;
+	width: 100%;
+	max-width: 154px;
+}
+
+.header__logo {
+	margin-right: 20px;
+}
+
+.img {
+	width: 100%;
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;
+}
+
+.header-navigation {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-grow: 1;
+}
+
+.list {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
 	margin: 0;
-   padding: 0;
-   width: 385px;
-   display: flex;
-   align-items: center;
-	
+	padding: 0;
+}
+
+.header-navigation__list {
+	width: 100%;
+	max-width: 300px;
 }
 
 /* пользовательское меню */
 
 .user-navigation {
 	outline: 5px solid yellow;
-	width: 310px;
+	width: 100%;
+	max-width: 300px;
 	display: flex;
    align-items: center;
 }
 
 /* режим работы */
-.container {
-	width: 1200px;
-	margin: 0 auto;
-	outline: 5px solid blue;
+
+.header-bottom {
+	display: flex;
+	justify-content: flex-end;
 }
 
-.info {
-	outline: 5px solid orange;
-	width: 196px;
-}
 
 .user-info {
-	
-}
-
-
-.navigation-container .container {
 	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
 }
-
-
 
 /* спец предложения */
 .spetial-offer {
@@ -156,7 +161,11 @@ a {
 
 
 
-
+.footer-logo {
+	display: flex;
+	width: 100%;
+	max-width: 109px;
+}
 
 
 
