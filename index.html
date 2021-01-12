@@ -93,12 +93,8 @@
 
 		<main class="container">
 			<h1 class="visually-hidden">Интернет-магазин мороженого Gllacy</h1>
-
 			<section>
 				<h2 class="visually-hidden">Мороженое</h2>
-				<div>
-
-				</div>
 				<ul>
 					<li>
 						<h3>Крем-брюле и пломбир с малиновым джемом</h3>
@@ -115,15 +111,15 @@
 				</ul>
 			</section>
 
-			<section class="spetial-offer">
+			<section class="columns">
 				<h2 class="visually-hidden">Специальное предложение</h2>
-				<div class="spetial-offer-raspberries">
+				<div class="columns-item spetial-offer-raspberries">
 					<p>Малинка даром!</p>
 					<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
 					</p>
 					<a href="#">Хочу варенье!</a>
 				</div>
-				<div class="spetial-offer-chocolate">
+				<div class="columns-item spetial-offer-chocolate">
 					<p>Шоколадки даром!</p>
 					<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно
 						бесплатно.</p>
@@ -133,84 +129,85 @@
 
 			<section class="hits">
 				<h2 class="visually-hidden">Хиты продаж</h2>
-				<ul class="hits__catalog">
-					<li>
-						<img src="img/1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+				<article class="hits-item">
+						<img class="hits-img" src="img/1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 						<p>
 							<span>310₽</span>
 							<span>/кг</span>
 						</p>
 						<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 						<button class="button" type="button">Быстрый просмотр</button>
-					</li>
-					<li>
-						<img src="img/2.jpg" alt="Сливочно-кофейное с кусочками шоколада">
+					</article>
+					<article>
+						<img class="hits-img" src="img/2.jpg" alt="Сливочно-кофейное с кусочками шоколада">
 						<p>
 							<span>380₽</span>
 							<span>/кг</span>
 						</p>
 						<a href="#">Сливочно-кофейное с кусочками шоколада</a>
 						<button class="button" type="button">Быстрый просмотр</button>
-					</li>
-					<li>
-						<img src="img/3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+					</article>
+					<article>
+						<img class="hits-img" src="img/3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
 						<p>
 							<span>355₽</span>
 							<span>/кг</span>
 						</p>
 						<a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
 						<button class="button" type="button">Быстрый просмотр</button>
-					</li>
-					<li>
-						<img src="img/4.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
+					</article>
+					<article>
+						<img class="hits-img" src="img/4.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
 						<p>
 							<span>415₽</span>
 							<span>/кг</span>
 						</p>
 						<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
 						<button class="button" type="button">Быстрый просмотр</button>
-					</li>
-				</ul>
+					</article>
 			</section>
 
 			<section class="advantages">
 				<h2 class="visually-hidden">Наши преимущества</h2>
-				<p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес
+				<p class="advantages-top">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес
 				</p>
 				<ul class="advantages-list">
-					<li>
+					<li class="advantages-list__item">
 						<p>Все наше мороженое изготавливается на собственном производстве, с использованием современного
 							оборудования и проверенных временем технологий.</p>
 					</li>
-					<li>
+					<li class="advantages-list__item">
 						<p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми
 							нас связывает долговременное сотрудничество.</p>
 					</li>
-					<li>
+					<li class="advantages-list__item">
 						<p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все
 							дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
 					</li>
-					<li>
+					<li class="advantages-list__item">
 						<p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает
 							мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
 					</li>
 				</ul>
 			</section>
 
-			<section class="useful-information">
+			<section class="columns">
 				<h2 class="visually-hidden">Полезная информация</h2>
-				<article class="news">
-					<h3>Новое в нашем блоге</h3>
-					<a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+				<article class="columns-item news">
+					<p class="news-title">Новое в нашем блоге</p>
+					<h3 class="news-title__link">
+						<a href="#">10 способов сервировки <br> фруктовых щербетов к <br> столу</a>
+					</h3>
 				</article>
-				<div class="subscribe-form">
+				<div class="columns-item subscribe-form">
 					<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого
 						вкусного, что у нас происходит. Обещаем не спамить и не слать всякой
 						ненужной ерунды. Честно =)
 					</p>
 					<form action="/https://echo.htmlacademy.ru" method="POST">
 						<p>
-							<label><input type="email" placeholder="email@example.com" value="">Электронная почта</label>
+							<input id="e-mail" type="email" placeholder="email@example.com" value="">
+							<label class="visually-hidden" for="e-mail">Электронная почта</label>
 						</p>
 						<button class="button" type="submit">Отправить</button>
 					</form>
@@ -236,12 +233,12 @@
 			</section>
 		</main>
 
-		<footer>
+		<footer class="container">
 			<div>
 				<ul>
 					<li>
 						<a href="#">
-							<span class="visually-hidden">Твиттер</span>
+							<span class="visually-hidden ">Твиттер</span>
 							<img src="img/twitter.svg">
 						</a>
 					</li>
@@ -275,7 +272,7 @@
 			</div>
 			<div>
 				<a href="https://htmlacademy.ru/intensive/htmlcss">
-					<img src="img/logo-htmlacademy.svg" alt="Логотип HTML академии" class="footer-logo">
+					<img src="img/logo-htmlacademy.svg" alt="Логотип HTML академии" class="logo footer-logo">
 				</a>
 				<p>
 					Сделано в <a href="https://htmlacademy.ru/study">HTML Academy</a> &copy; 2020
