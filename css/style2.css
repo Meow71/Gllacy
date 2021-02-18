@@ -45,6 +45,7 @@ a {
    min-width: 900px;
 	margin-right: auto;
 	margin-left: auto;
+	padding: 0;
 	outline: 5px solid blue;
 }
 
@@ -100,7 +101,6 @@ a {
 /* пользовательское меню */
 
 .user-navigation {
-	outline: 5px solid yellow;
 	width: 100%;
 	max-width: 300px;
 	display: flex;
@@ -132,6 +132,7 @@ a {
 	position: relative;
 	max-width: 560px;
 	min-height: 229px;
+	box-sizing: border-box;
 	border-radius: 15px;
 }
 
@@ -178,16 +179,76 @@ a {
  .hits {
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-start;
 	width: 100%;
 	max-width: 1200px;
-	padding-top: 40px;
+	margin: 0 auto;
+	margin-bottom: 32px;
 	min-height: 363px;
 	outline: 5px solid white;
+ }
+ 
+ .hits-item {
+	position: relative;
+	width: 293px;
+	min-height: 334px;
+	padding: 0 13px;
+	padding-top: 6px;
+	box-sizing: border-box;
  }
 
  .hits-img {
 	border-radius: 50%;
  }
+
+ .hits-price {
+	position: absolute;
+	top: 213px;
+	left: 13px;
+	margin: 0;
+	white-space: nowrap;
+ 
+	font-size: 45px;
+	line-height: 1em;
+	font-weight: 700;
+ }
+
+ .hits-price span {
+	position: relative;
+	left: -10px;
+ 
+	font-size: 30px;
+ }
+
+ .item-heading {
+	margin: 0;
+	margin-top: 6px;
+	padding: 0;
+ 
+	text-align: center;
+ }
+
+ .item-heading a {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 22px;
+ }
+
+.hits-item:hover,
+.hits-item:focus,
+.hits-item:active {
+	border: 0,1px solid;
+	border-radius: 3%;
+   background-color: #9bafa3;
+}
+.hits-button {
+	display: none;
+}
+.hits-item:hover .hits-button,
+.hits-item:focus .hits-button,
+.hits-item:active .hits-button {
+	display: block;
+}
 
  /* Преимущества */
 .advantages {
